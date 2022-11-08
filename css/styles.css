@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Roboto+Condensed:wght@300;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #252525;
+}
+
+li, a, button{
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-size: 26px;
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.name-lastname{
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    cursor: pointer;
+    color: #f3f3f3;
+    font-size: 36px;
+}
+
+.name-lastname{
+    transition: all 0.3s ease 0s;
+}
+
+.name-lastname:hover{
+    color: #13de1d;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #13de1d;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #252525;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    color: #13de1d;
+}
+
+.home-cont{
+    font-family: "Roboto Condensed";
+    font-weight: 100;
+    font-size: 36px;
+    padding-top: 15rem;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+.prof-typing{
+    font-weight: 700;
+}

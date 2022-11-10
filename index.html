@@ -9,54 +9,93 @@
 
   <!-- File per CSS -->
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- File-t e JavaScript -->
 </head>
 
 <body>
-  <!-- File-t e JavaScript -->
-  <script src="scripts/script.js"></script>
 
   <!-- NavBar -->
   <header class="header-class">
     <nav class="navbar">
       <h3 class="name-lastname">Florian Zeqiri</h3>
       <ul class="nav_links">
-        <li><a href="#">
-            < Home>
+        <li><a href="#home" class="nav__links">
+            <span class="par-decor">
+              < </span> Home <span class="par-decor"> > </span>
+          </a></li>
+        <li><a href="#about">
+            <span class="par-decor">
+              < </span> About <span class="par-decor"> > </span>
           </a></li>
         <li><a href="#">
-            < About>
-          </a></li>
-        <li><a href="#">
-            < Projects>
+            <span class="par-decor">
+              < </span> Projects <span class="par-decor"> > </span>
           </a></li>
       </ul>
+      <a href=""><button class="contact-btn">Contact</button></a>
     </nav>
-    <a href="" class="cta"><button>Contact</button></a>
   </header>
 
   <!-- Hyrja ("Home") -->
-  <div class="home">
+  <div id="home">
     <div class="home-cont">
-      <img
+      <!--
+        <img
         src="https://dub06pap001files.storage.live.com/y4mXfq6QPjNZLzps5YyskMK7FXLf4cipelv_2LES9KTpzmkBAw-wbcqHoA5nLHr1RvT8C_oi5ttg48yvg76KpEESYlWo5GD8kv2gUEm9d2u2geU4uc77didUpLoKXuNRA-knwfIFcj8o-Dz7qjc4U53wd-hZLCLNL_o0_Yqed6c2-q0N-tTPOlL4Tzws5kbkHKM?width=720&height=720&cropmode=none"
-        alt="profile-pic" class="my-pic">
+          alt="profile-pic" class="my-pic">
+      -->
       <h1 class="small-txt">
         Hi, my name is
-      </h1> 
+      </h1>
       <h2 class="home-name">Florian Zeqiri.</h2>
-      <h2 class="home-profession">I am a Web Developer.</h2>
+      <h2 class="home-profession">I am a <span class="prof-typing"> Web Developer.</span></h2>
+      <p class="para-text">
+        I'm a CS student specializing in Software Engineering (and occasionally web development).<br>
+        Currently i'm focused on my studies at <a href="https://www.ubt-uni.net" class="uni-link">UBT</a>.
+      </p>
+      <button class="resume-btn"> Check out my resume! </button>
     </div>
   </div>
 
   <!-- Rreth Meje ("About") -->
   <div class="about"></div>
 
+  <div id="about">
+    <div class="about-content">
+      <h1 class="title">
+        < About Me>
+      </h1>
+
+      <p class="txt-container">
+        I am Florian Zeqiri, a Computer Science and Engineering student at UBT (University of Business and Technology).
+        I possess great programming skills in Java, Python, HTML and CSS, eager to learn new skills on Web Development
+        or Back-End Development. During my studies, I started extra-curricular certifications, which developed my skills
+        even further. As part of those certifications, I had to complete multiple projects to finish them. In web
+        development, I am certified in Responsive Web Design at freeCodeCamp, also certified at back-end programming
+        with Django at BIT Academy.
+      </p>
+      <p class="txt-container">
+        I gained a whole lot of technical skills during my journey as a developer, most of those skills came through
+        certifications projects. For example, developing a Personal Portfolio with HTML5 and CSS3, brought new
+        challenges that would push my skills further. Because of that, now I am familiar with concepts of Responsive Web
+        Designing. I also learned how to better utilize tools to my advantage.
+        During my work on such projects, I developed habits and non-technical skills such as researching, different
+        methodologies, clean-coding habits, time-management skills and that would be of great use to me as a developer.
+        I am always open to learning new things in both technical and/or non-technical skills.
+        I remain hopeful that I will be given an opportunity for an interview, where we could discuss further about my
+        skills and any additional information as well as the open position.
+        Thank you beforehand for your time.
+
+      </p>
+    </div>
+  </div>
   <!-- Projektet ("Projects ") -->
   <div class="projects"></div>
 
   <!-- Kontakti ("Contacts")-->
   <div class="contact"></div>
   <footer class="footer-class"></footer>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

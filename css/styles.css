@@ -7,7 +7,6 @@
   --off-white: rgba(215, 215, 215, 1);
   --slated-gray: rgba(208, 208, 208, 0.8);
   --boston-blue: rgb(59, 190, 226);
-  --nav-height: 50px;
 }
 
 * {
@@ -16,11 +15,16 @@
   margin: 0;
   padding: 0;
   background-color: rgba(37, 37, 37, 1);
+  scroll-behavior: smooth;
 }
 
 body {
   padding-top: var(--nav-height);
 }
+
+/*
+    Navbar part
+*/
 
 li,
 a,
@@ -30,6 +34,7 @@ button {
   color: var(--off-white);
   text-decoration: none;
 }
+
 
 header {
   display: flex;
@@ -64,6 +69,7 @@ header {
 
 .nav_links {
   list-style: none;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .nav_links li {
@@ -112,10 +118,20 @@ header {
   color: var(--boston-blue);
 }
 
+/*
+    Button property
+*/
+
 button:hover {
-  color: rgba(208, 208, 208, 0.3);
+  color: rgba(152, 178, 190, 0.9);
+  filter: drop-shadow(0 0 0.65rem var(--bahama-blue));
   border-color: var(--bahama-blue);
 }
+
+
+/*
+    Home part
+*/
 
 .home-cont {
   margin: 4% 10% 0%;
@@ -145,11 +161,6 @@ button:hover {
 .prof-typing {
   font-weight: 700;
 }
-.my-pic {
-  padding: 1%;
-  max-width: 250px;
-  max-height: 250px;
-}
 
 .para-text {
   max-width: 40rem;
@@ -178,6 +189,11 @@ button:hover {
   transition: all 0.3s ease 0s;
 }
 
+
+/*
+    About part
+*/
+
 #about{
     margin: 10%;
     color:var(--slated-gray);
@@ -185,6 +201,7 @@ button:hover {
 
 .about-content{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 70%;
     margin: 8% 4% 0;
@@ -192,8 +209,20 @@ button:hover {
 
 .about-content img{
     max-height: 15rem;
-    margin: auto 3%;
-    padding: auto 2%;
+    margin: auto 10%;
+    padding: auto 10%;
+    align-items: ce;
+    filter: drop-shadow(0 0 0.75rem var(--bahama-blue));
+    opacity: 0.7;
+    box-shadow: 15px 15px var(--slated-gray);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.about-content img:hover{
+    opacity: 0.8;
+    filter: drop-shadow(0 0 0.85rem var(--bahama-blue));
+    box-shadow: 10px 10px var(--bahama-blue);
+    transition: all 0.3s ease 0s;
 }
 
 .about-content .txt-container{
@@ -202,15 +231,34 @@ button:hover {
     font-size: 20px;
 }
 
+.about-content .title{
+    margin: 4% 0%;
+}
+
+.active{
+    order: -1;
+    flex: 1 0 22%;
+}
+
+/*
+    Projects part
+*/
 #projects{
     margin: 10%;
-    color:var(--slated-gray);
+    color: var(--slated-gray);
 }
 
 .proj-content{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 70%;
-    margin: 8% 9% 5%;
+    margin: 8% 4% 0;
+    font-size: 20px;
+}
+
+.proj-content .title{
+    font-size: 32px;
+    margin: 4% 0%;
 }
 

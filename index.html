@@ -10,7 +10,7 @@
   <!-- File per CSS -->
 
   <link rel="stylesheet" href="css/styles.css" />
-
+  <script src="https://kit.fontawesome.com/5e78015846.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,17 +18,23 @@
   <!-- NavBar -->
 
   <nav>
+    <div class="logo">
+      <h1>Florian Zeqiri</h1>
+    </div>
+    <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
     <ul class="menu">
-      <li class="logo"><a href="#">Florian Zeqiri</a></li>
-      <li class="item"><a href="#home"> <span class="par-decor">
-            < </span>Home <span class="par-decor"> > </span></a></li>
-      <li class="item"><a href="#about"> <span class="par-decor">
-            < </span>About <span class="par-decor"> > </span></a></li>
-      <li class="item"><a href="#projects"> <span class="par-decor">
-            < </span>Projects <span class="par-decor"> > </span></a></li>
-      <li class="item"><a href="#"> <span class="par-decor">
-            < </span>Contact <span class="par-decor"> > </span></a></li>
-      <li class="toggle-btn"><span class="bars"></span></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <div class="close-menu"><i class="fa-solid fa-xmark"></i></div>
+      <span class="icons">
+        <a href="https://github.com/FlorianZeqiri" class="social"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/florianzeqiri/" class="social"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/florianzeqiiri/" class="social"><i class="fa-brands fa-instagram"></i></a>
+
+
+      </span>
     </ul>
   </nav>
 
@@ -46,51 +52,137 @@
         I'm a CS student specializing in Software Engineering (and occasionally web development).<br>
         Currently i'm focused on my studies at <a href="https://www.ubt-uni.net" class="uni-link">UBT</a>.
       </p>
-      <a href="https://docs.google.com/document/d/1Qe35kYfePKemFMe93hvlAXEKibMnsmMj3Pt-07hQmxU/edit"><button class="resume-btn"> Check out my resume! </button></a> 
+      <a href="https://docs.google.com/document/d/1Qe35kYfePKemFMe93hvlAXEKibMnsmMj3Pt-07hQmxU/edit"><button
+          class="resume-btn"> Check out my resume! </button></a>
     </div>
   </div>
 
-  <!-- Rreth Meje ("About") -->
-
-  <div id="about">
-    <div class="about-content">
-      <h1 class="active title">
-        <span class="par-decor">
-          < </span> About Me <span class="par-decor"> > </span>
-      </h1>
-      <p class="txt-container">
-        I am Florian Zeqiri, a Computer Science and Engineering student at UBT (University of Business and Technology).
-        I possess great programming skills in Java, Python, HTML and CSS, eager to learn new skills on Web Development
-        or Back-End Development. During my studies, I started extra-curricular certifications, which developed my skills
-        even further. As part of those certifications, I had to complete multiple projects to finish them. In web
-        development, I am certified in Responsive Web Design at freeCodeCamp, also certified at back-end programming
-        with Django at BIT Academy.
-      </p>
-      <div class="image-wrapper">
-        <img
-          src="https://dub06pap001files.storage.live.com/y4mRvNYS0qlw_XkJuhVHgji6po0lbSTztqovo4lMZnf9h2kvQeJcs36l-C85-iuTc_FyBMCg58qtkH8FZPN8jjZJ3STb74d5M5i0Jkdklc7072cnTPly5FMxX8hICF4HEjzHt1hupOGgktqch2czByBN_QkPQWdUR4328Qai_lpH1Rvee-DB4PxcEg3ylfMCPdC?width=400&height=400&cropmode=none"
-          alt="profile-pic" class="profile-pic">
+  <div class="container">
+    
+    <!-- Rreth Meje ("About") -->
+    <div id="about">
+      <div class="left-column">
+        <h1 class="title">About Me</h1>
+        <p class="about-text">
+          I am Florian Zeqiri, a Computer Science and Engineering student at UBT (University of Business and Technology).
+          I possess great programming skills in Java, Python, HTML and CSS, eager to learn new skills on Web Development
+          or Back-End Development. During my studies, I started extra-curricular certifications, which developed my skills
+          even further. As part of those certifications, I had to complete multiple projects to finish them. In web
+          development, I am certified in Responsive Web Design at freeCodeCamp, also certified at back-end programming
+          with Django at BIT Academy.
+        </p>
       </div>
-
+      <div class="right-column">
+        <div class="img-wrapper">
+          <img
+            src="https://dub06pap001files.storage.live.com/y4mRvNYS0qlw_XkJuhVHgji6po0lbSTztqovo4lMZnf9h2kvQeJcs36l-C85-iuTc_FyBMCg58qtkH8FZPN8jjZJ3STb74d5M5i0Jkdklc7072cnTPly5FMxX8hICF4HEjzHt1hupOGgktqch2czByBN_QkPQWdUR4328Qai_lpH1Rvee-DB4PxcEg3ylfMCPdC?width=400&height=400&cropmode=none"
+            alt="profile-pic" class="profile-pic">
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- Projektet ("Projects ") -->
-  <div id="projects">
-    <div class="proj-content">
+
+
+    
+    <!-- Projektet ("Projects ") -->
+    <!-- <div id="projects">
       <h1 class="title">
-        <span class="par-decor">
-          < </span>
-            Projects
-            <span class="par-decor">
-              >
-            </span>
+        Projects
       </h1>
+      <div class="gallery">
+        <div class="project-content">
+          <img src="https://www.zohowebstatic.com/sites/default/files/survey/website-feedback-survey-questionnaire-template.jpg" alt="survey-form-pic"/>
+          <h3>Responsive Survey Form</h3>
+          <a href="#" class="project-link"><button class="see-more">See more</button></a>
+        </div>
+        <div class="project-content">
+          <img src="https://i.stack.imgur.com/XFGO4.png" alt="python-timetable-pic"/>
+          <h3>University Timetable using Tkinter</h3>
+          <a href="#" class="project-link"><button class="see-more">See more</button></a>
+        </div>
+        <div class="project-content">
+          <img src="https://thecounter.org/wp-content/uploads/2020/04/man-who-tried-to-feed-the-world-borlaug-with-wheat-april-21-2020.jpg" alt="norman-borlaug-pic"/>
+          <h3>Tribute Page</h3>
+          <a href="#" class="project-link"><button class="see-more">See more</button></a>
+        </div>
+      </div>
+    </div> -->
+    
+    <div id="projects">
+      <h1 class="title">My Projects</h1>
+      <div class="project-card"><!-- Product card -->
+        <div class="left-column">
+          <img src="https://www.zohowebstatic.com/sites/default/files/survey/website-feedback-survey-questionnaire-template.jpg" alt="survey-form-pic">
+        </div>
+        <div class="right-column">
+          <div class="project-name"><!-- Product name -->
+            <h1>Survey Form</h1>
+          </div>
+          <div class="tech">HTML & CSS</div><!-- Price -->
+          <div class="description">
+            <p>
+              Responsive web using HTML and CSS. General Survey Form.
+            </p>
+          </div>
+          <button class="btn">See more!</button>
+        </div>
+      </div>
+  
+      <div class="project-card"><!-- Product card -->
+        <div class="left-column">
+          <img src="https://i.stack.imgur.com/XFGO4.png" alt="python-timetable-pic">
+        </div>
+        <div class="right-column">
+          <div class="project-name"><!-- Product name -->
+            <h1>University Timetable using Tkinte</h1>
+          </div>
+          <div class="tech">Python Tkinter</div><!-- Price -->
+          <div class="description">
+            <p>
+              A Timetable created for an University to manage classess and Students. Made with python and Tkinter.
+            </p>
+          </div>
+          <button class="btn">See more!</button>
+        </div>
+      </div>
+  
+      <div class="project-card"><!-- Product card -->
+        <div class="left-column">
+          <img src="https://thecounter.org/wp-content/uploads/2020/04/man-who-tried-to-feed-the-world-borlaug-with-wheat-april-21-2020.jpg" alt="survey-form-pic">
+        </div>
+        <div class="right-column">
+          <div class="project-name"><!-- Product name -->
+            <h1>Page Tribute</h1>
+          </div>
+          <div class="tech">HTML & CSS</div><!-- Price -->
+          <div class="description">
+            <p>
+              Responsive web using HTML and CSS. A tribute page for an American Agronomist named Norman Borlaug. 
+            </p>
+          </div>
+          <button class="btn">See more!</button>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- Kontakti ("Contacts")-->
-  <div id="contact"></div>
-  <footer class="footer-class"></footer>
 
+    
+  </div>
+  
+  <footer class="footer-class">
+    <!-- Kontakti ("Contacts")-->
+    <div id="contact">
+      <p>
+        Here's my socials if you want to link up...
+      </p>
+
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    
+    <p class="end-text">Made by Florian, 2022</p>
+  </footer>
   <!-- File per javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
     referrerpolicy="no-referrer"></script>
